@@ -4,7 +4,7 @@ Cartridge-Short-Name: MEMCACHED
 Description: "Memcached is an in-memory key-value store for small chunks of arbitrary data (strings, objects) from results of database calls, API calls, or page rendering."
 Version: '1.4.20'
 Cartridge-Version: 1.0.0
-Cartridge-Vendor: vbchin2
+Cartridge-Vendor: gabriel-andrade
 License: ASL 2.0
 Vendor: Memcached
 
@@ -32,8 +32,8 @@ Publishes:
     Type: "ENV:NET_TCP:cache:connection-info"
 
 Scaling:
-  Min: 1
-  Max: 1
+  Min: 2
+  Max: -1
 
 Endpoints:
   - Private-IP-Name:   HOST
@@ -41,4 +41,4 @@ Endpoints:
     Private-Port:      11211
     Public-Port-Name:  PROXY_PORT
 
-Source-Url: "https://github.com/vbchin2/openshift-cartridge-memcached.git"
+Source-Url: "https://github.com/gabriel-andrade/openshift-cartridge-memcached.git"
