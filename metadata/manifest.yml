@@ -32,7 +32,7 @@ Publishes:
     Type: "ENV:NET_TCP:cache:connection-info"
 
 Scaling:
-  Min: 2
+  Min: 1
   Max: -1
 
 Endpoints:
